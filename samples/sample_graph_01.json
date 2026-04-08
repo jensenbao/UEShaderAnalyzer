@@ -1,0 +1,41 @@
+{
+  "material_name": "M_Test",
+  "source_type": "sample",
+  "nodes": [
+    {
+      "id": "node_1",
+      "name": "TextureSample_0",
+      "type": "TextureSample",
+      "params": {
+        "texture": "/Game/Textures/T_Rock_D"
+      }
+    },
+    {
+      "id": "node_2",
+      "name": "Multiply_0",
+      "type": "Multiply",
+      "params": {
+        "const_b": 0.8
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "node_1",
+      "from_pin": "RGB",
+      "to_node": "node_2",
+      "to_pin": "A"
+    }
+  ],
+  "outputs": [
+    {
+      "output": "BaseColor",
+      "source_node": "node_2"
+    }
+  ],
+  "stats": {
+    "node_count": 2,
+    "edge_count": 1,
+    "output_count": 1
+  }
+}
